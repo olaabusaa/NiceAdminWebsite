@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Element</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm border border-white shadow ">
+    <img src="logo.png" class="mx-3 pt-2" id="img1">
+    <a style="color:#012970;font-size: 23px ;font-family:Arial;text-shadow:1px 1px 1px #012970 " class="navbar-brand pt-3 "href="bage2.html"> Nice Admin</a>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="bage2.html"><i style="font-size:15px" class="fa">&#xf2d0;</i> Dhashbord</a>
+        <div class="dropdown" >
+            <a style="width: 100%;font-size: 15px" type="button" class=" dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="fa fa-address-book-o"></i> Form</a>
+              <ul class="dropdown-menu" style="width: 100%;height:50px;border: 1px solid honeydew">
+                <li><a class="dropdown-item" href="formelement.html">Form Elements</a></li>
+            </ul>
+        </div>
+        <div class="dropdown" >
+            <a style="width: 100%;font-size: 15px" type="button" class=" dropdown-toggle" data-bs-toggle="dropdown">
+                <i class='far fa-list-alt' style='font-size:15px'></i> Table</a>
+            <ul class="dropdown-menu" style="width: 100%;height:50px;border: 1px solid honeydew">
+                <li><a   class="dropdown-item" href="table.html">General Table</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <span style="font-size:20px;cursor:pointer;color: #012970;" onclick="openNav()">&#9776; </span>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+    <ul class="navbar-nav">
+        <li> <div class="input-group">
+            <input type="text" id="search" placeholder="Search">
+            <span class="input-group-text" id="s1"> <i class="fa fa-search"></i></span></div></li>
+        <li><i class="fa fa-bell-o" id="navication"></i></li>
+        <li><i class="fa fa-commenting-o" id="navication2"></i></li>
+        <li> <img src="profile-img.jpg" class="rounded-circle mx-4" id="img2"></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="k">K.Anderson</a>
+            <ul class="dropdown-menu" id="ul1">
+                <li><a class="dropdown-item" href="#">My profile</a></li>
+                <b></b>
+                <li><a class="dropdown-item" href="#">Acount settings</a></li>
+                <li><a class="dropdown-item" href="#">sing out</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="" id="all">
+    <div>
+        <p class="p1">Form Elements</p>
+        <p class="p2"> Home / Form / Element</p>
+    </div>
+    <div class="one">
+        <p class="p3"> General Form Elements </p>
+        <form>
+            <div class="">
+                <label style="margin-left:20px"> Text </label>
+                <input type="text"  style="margin-left:30px; width: 500px;height:40px;border-radius: 5px 5px 5px 5px;border: 1px solid gainsboro">
+                </div>
+            <br>
+            <div class="">
+                <label style="margin-left:20px"> Email </label>
+                <input type="email"  style="margin-left:22px; width: 500px;height:40px;border-radius: 5px 5px 5px 5px;border: 1px solid gainsboro">
+            </div>
+            <br>
+            <div class="">
+                <label style="margin-left:20px"> Email </label>
+                <input type="email"  style="margin-left:22px; width: 500px;height:40px;border-radius: 5px 5px 5px 5px;border: 1px solid gainsboro">
+            </div>
+            <br>
+            <div class="">
+                <label style="margin-left:20px"> File Upload </label>
+                <input type="file"  style="margin-left:15px; width: 470px;height:30px;border-radius: 5px 5px 5px 5px;border: 1px solid gainsboro">
+            </div>
+            <br>
+            <div class="">
+                <label style="margin-left:20px"> Date </label>
+                <input type="date"  style="margin-left:27px; width: 500px;height:40px;border-radius: 5px 5px 5px 5px;border: 1px solid gainsboro">
+            </div>
+            <br>
+            <div class="">
+                <label style="margin-left:20px"> Time </label>
+                <input type="time"  style="margin-left:27px; width: 500px;height:40px;border-radius: 5px 5px 5px 5px;border: 1px solid gainsboro">
+            </div>
+            <br>
+            <div class="">
+                <lable style="margin-left:20px" >Color</lable>
+                <input type="color"  style="margin-left:27px">
+            </div>
+            <br>
+            <div class="">
+                <lable style="margin-left:20px;" >Text area:</lable>
+                <br>
+                <textarea style="margin-top: 10px;margin-left: 100px" rows="4" cols="50"></textarea>
+            </div>
+             <br>
+             <div style="margin-left: 20px">
+            <label class="">Radios</label>
+            <div class="form-check">
+                <input type="radio" class=" form-check-input" name="lan">
+                <label class="form-check-lable">First radio</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class=" form-check-input" name="lan">
+                <label class="form-check-lable">secound radio</label>
+                <div class="form-check">
+                    <input type="radio" class=" form-check-input" name="lan" style="margin-left: -45px">
+                    <label class="form-check-lable" disabled style="opacity: 0.5;margin-left: -20px">third disabled radio</label>
+                </div>
+            </div>
+             </div>
+           <div style="margin-left: 20px">
+               <br>
+            <label > Check Box</label>
+               <br>
+            <div class="form-check">
+                <input type="checkbox" class=" form-check-input">
+                <label class="form-check-lable">Example checkbox</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class=" form-check-input">
+                <label class="form-check-lable">Example checkbox</label>
+            </div>
+           </div>
+
+            <div>
+                <br>
+                <label style="margin-left: 20px">Disable</label>
+                <input type="text" placeholder="Read only/Disabled" disabled style="background-color:gainsboro;width: 500px;height: 30px;border-radius: 5px 5px 5px 5px;border: 1px solid gainsboro">
+            </div>
+             <br>
+            <div style="margin-left: 20px">
+                <label class="">Select:</label>
+                <select class=" from-select-sm" style="margin-left: 20px;width: 350px;height: 30px;border:1px solid gainsboro; border-radius: 5px 5px 5px 5px">
+                    <option>....Open this select....</option>
+                    <option>one</option>
+                    <option>two</option>
+                    <option>three</option>
+                </select>
+
+            </div>
+            <br>
+            <div style="margin-left: 20px">
+            <label for="cars">Select multi:</label>
+                <br>
+            <select name="cars" id="cars" multiple style="width: 300px;border:1px solid gainsboro; border-radius: 5px 5px 5px 5px">
+                <br>
+                <option value="volvo">open this select </option>
+                <option value="volvo">one </option>
+                <option value="saab">two</option>
+                <option value="opel">three</option>
+            </select>
+            </div>
+            <input type="submit" value="submit Form" class="bg-primary btn-lg" style="color:white;margin-top:30px;margin-left: 20px; border:1px solid blue;width: 150px;height: 40px; border-radius: 5px 5px 5px 5px">
+        </form>
+    </div>
+    <div class="two">
+       <p class="p3"> Advanced Form Elements </p>
+        <label style="margin-left: 20px;font-size: 20px">Switch:</label>
+        <div class="form-check form-switch">
+            <input style="margin-left:-20px;" type="checkbox" class=" form-check-input">
+            <label style="margin-left: 5px;" class="form-check-lable">Default switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input style="margin-left:-20px;" type="checkbox" checked class=" form-check-input">
+            <label style="margin-left: 5px;" class="form-check-lable">Checked switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input style="margin-left:-20px;" type="checkbox" class=" form-check-input" disabled>
+            <label style="margin-left: 5px;opacity: 0.5" class="form-check-lable">Checked switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+            <input style="margin-left:-20px;" type="checkbox" checked class=" form-check-input" disabled>
+            <label style="margin-left: 5px;opacity: 0.5" class="form-check-lable">Disabled checked switch checkbox input</label>
+        </div>
+        <br><br>
+        <labele style="margin-left: 20px;font-size: 20px"> Salary: </labele>
+        <br>
+        <label style="margin-left: 20px ;font-size: 17px">Example range</label>
+        <input type="range" class="form-range">
+        <label style="margin-left: 20px ;font-size: 17px">Disabled range</label>
+        <input  disabled type="range" class="form-range">
+        <label style="margin-left: 20px ;font-size: 17px">Min and max with steps</label>
+        <input  type="range" class="form-range">
+        <br>
+        <label style="margin-left: 20px;font-size: 20px">Floating labels:</label>
+        <br><br>
+        <div class="form-floating">
+            <input  style="margin-left: 20px;width: 500px" type="email" class="form-control" id="email1"placeholder="Enter Email address">
+            <label  style="margin-left: 20px" for="email1"> Email address</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input  style="margin-left: 20px;width: 500px" type="password" class="form-control" id="pas"placeholder="Enter Email address">
+            <label  style="margin-left: 20px" for="pas"> Password</label>
+        </div>
+        <br>
+        <div class="form-floating">
+          <textarea  style="margin-left: 20px;width: 500px"class="form-control" id="note" placeholder="enter comment"></textarea>
+            <label  style="margin-left: 20px" for="note"> Comment</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <select style="margin-left: 20px;width: 500px"class="form-control" id="sel">
+                <option >...Open this select...</option>
+                <option>one</option>
+                <option>two</option>
+                <option>three</option>
+            </select>
+            <label  for="sel"style="margin-left: 20px">Works this select</label>
+        </div>
+        <br>
+        <label  style="margin-left: 20px;font-size: 20px">Input groups:</label>
+        <br><br>
+        <div class="input-group">
+            <span  class="input-group-text">@</span>
+            <input type="text" placeholder="Username"class="form-control" >
+        </div>
+        <br>
+        <div class="input-group">
+            <input type="email" placeholder="Recipient's username"class="form-control" >
+            <span  class="input-group-text">@example.com</span>
+        </div>
+        <br>
+        <label style="margin-left: 20px;font-size: 20px">Your vanity URL</label>
+        <div class="input-group">
+            <span  class="input-group-text">https://example.com/users/</span>
+            <input type="url" class="form-control" >
+        </div>
+        <br>
+        <div class="input-group">
+            <span  class="input-group-text">$</span>
+            <input type="number" class="form-control" >
+            <span  class="input-group-text">.00</span>
+        </div>
+       <br>
+        <div class="input-group">
+            <input type="text" placeholder="Username"class="form-control" >
+            <span  class="input-group-text">@</span>
+            <input type="url" placeholder="Server"class="form-control" >
+        </div>
+        <br>
+        <div class="input-group">
+            <span  class="input-group-text">With textarea</span>
+            <textarea  style="width: 300px"class="form-control"></textarea>
+        </div>
+    </div>
+    <div class="all2">
+            <pre style="text-align: center;font-size:13px;color: #012970;margin-top: 30px">©Copyright NiceAdmin.All Rights Reserved
+ Designed by BootstrapMade</pre>
+    </div>
+</div>
+</body>
+</html>
